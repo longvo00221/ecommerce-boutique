@@ -40,3 +40,23 @@ npm install
 
 cd ../backend
 npm install
+````
+## Contributing
+
+Contributions are welcome! If you want to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make the necessary changes and commit your code.
+4. Push your branch to your forked repository.
+5. Submit a pull request explaining your changes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+If you have any questions or suggestions, please feel free to contact the project maintainer at [longvo010203@gmail.com]
+
+
