@@ -13,6 +13,11 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  avatar: {
+    type: String,
+    require: false,
+    default:"https://res.cloudinary.com/dvtv1j2rn/image/upload/v1672837539/avatars/defaultuser_eg3kpm.png"
+  },
   password: {
     type: String,
     required: true,
@@ -23,6 +28,11 @@ const userSchema = new mongoose.Schema({
     required: true,
     select: false,
   },
+  resetPasswordToken:{
+    type:String,
+    default:null,
+
+  }
 });
 
 userSchema.methods.setPassword = function (password) {
