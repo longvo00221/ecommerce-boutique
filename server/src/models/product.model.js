@@ -5,18 +5,12 @@ const productSchema = mongoose.Schema({
         type:String,
         require:true
     },
-    normalizedName:{
-        type:String,
-        require:true
-    },
-    englishName:{
-        type:String,
-        require:true
-    },
     desc:{
         type:String,
         require:true,
-        unique:true,
+        index: {
+            unique: false
+        }
     },
     type:{
         type:String,

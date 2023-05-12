@@ -5,6 +5,7 @@ import http from "http";
 import "dotenv/config";
 import mongoose from "mongoose";
 import routes from "./src/routes/index.js";
+import importStaticData from "./DataImport.js";
 const app = express();
 
 app.use(
@@ -12,6 +13,7 @@ app.use(
     origin: "*",
   })
 );
+app.use('/api/import',importStaticData)
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
