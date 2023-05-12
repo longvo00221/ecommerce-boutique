@@ -13,13 +13,12 @@ const productSchema = mongoose.Schema({
         type:String,
         require:true
     },
-    title:{
+    desc:{
         type:String,
         require:true,
         unique:true,
     },
-    
-    nameId:{
+    type:{
         type:String,
         require:true,
     },
